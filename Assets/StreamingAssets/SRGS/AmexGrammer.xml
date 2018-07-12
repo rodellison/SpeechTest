@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<grammar version="1.0" xml:lang="en-US" mode="voice" root="main"
+xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="main" scope="public">
+    <one-of>
+      <item><ruleref uri="#greet" /></item>
+      <item><ruleref uri="#request" /></item>
+    </one-of>
+  </rule>
+  <rule id="greet">
+    <one-of>
+      <item>hello</item>
+      <item>good afternoon</item>
+      <item>good evening</item>
+      <item>good bye</item>
+      <item>bye</item>
+    </one-of>
+  </rule>
+<rule id="request">
+    <item repeat="0-1">please</item>
+    <one-of>
+      <item>can you please help me</item>
+      <item>help me</item>
+      <item>can you help me</item>
+    </one-of>
+    <item repeat="0-1">with</item>
+    <item repeat="0-1">my</item>
+    <one-of>
+      <item>platinum</item>
+      <item>amex</item>
+      <item>gold</item>
+      <item>blue</item>
+      <item>blue cash</item>
+      <item>business platinum</item>
+    </one-of>
+    <item repeat="0-1">card</item>
+    <item repeat="0-1">please</item>
+  </rule>
+</grammar>
