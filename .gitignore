@@ -38,3 +38,4 @@ sysinfo.txt
 # JetBrains
 *.idea
 .idea/
+Assets/Plugins/Editor/JetBrains/
